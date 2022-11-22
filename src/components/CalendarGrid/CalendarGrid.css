@@ -1,0 +1,19 @@
+.gridWrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0;
+    grid-gap: 1px;
+    background-color: #404040;
+}
+
+.cellWrapper{
+    background-color: #1e1f21;
+    color: #DDDCDD;
+    min-width: 140px;
+    min-height: 80px;
+}
+
+.cellWrapper:hover{
+    background-color:darkcyan;
+}
