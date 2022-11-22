@@ -1,4 +1,4 @@
-.gridWrapper{
+.gridWrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -7,13 +7,36 @@
     background-color: #404040;
 }
 
-.cellWrapper{
+.cellWrapper {
     background-color: #1e1f21;
     color: #DDDCDD;
     min-width: 140px;
     min-height: 80px;
 }
 
-.cellWrapper:hover{
-    background-color:darkcyan;
+.dayWrapper {
+    display: flex;
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekdaysWrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rowInCell {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cellWrapper:hover {
+    background-color: darkcyan;
 }
