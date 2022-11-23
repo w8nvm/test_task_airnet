@@ -4,7 +4,7 @@ function getFirstDayOfMonth(year, month) {
 
 const numOfDays = 42;
 
-const week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 const months = ["January", "February",
     "March", "April", "May",

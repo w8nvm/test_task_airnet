@@ -1,3 +1,8 @@
+.calendarWrapper {
+    max-width: 1024px;
+    max-height: 960px;
+}
+
 .gridWrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -8,10 +13,20 @@
 }
 
 .cellWrapper {
-    background-color: #1e1f21;
+    background-color: #1A1C1E;
     color: #DDDCDD;
-    min-width: 140px;
+    min-width: 120px;
     min-height: 80px;
+}
+
+.weekend {
+    background-color: #212325;
+}
+
+.dayWrapper.today {
+    background-color: crimson;
+    border-radius: 50%;
+    opacity: 90%;
 }
 
 .dayWrapper {
@@ -25,6 +40,7 @@
 .weekdaysWrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 10px;
 }
 
 .weekday {

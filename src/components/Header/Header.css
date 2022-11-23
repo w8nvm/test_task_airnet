@@ -1,3 +1,25 @@
 .headerWrapper {
+    display: flex;
     padding-left: 10px;
+    justify-content: space-between;
+}
+
+.button {
+    border: unset;
+    background-color: #565759;
+    height: 20px;
+    margin-right: 2px;
+    border-radius: 4px;
+    color: #E6E6E6;
+}
+
+.todayButton {
+    padding-right: 16px;
+    padding-left: 16px;
+    font-weight: bold;
+}
+
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
 }
