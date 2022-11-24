@@ -1,7 +1,27 @@
 .headerWrapper {
     display: flex;
-    padding-left: 10px;
+    padding-left: 2vw;
     justify-content: space-between;
+    margin-right: 25px;
+}
+
+.header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #27364B;
+    margin-left: 2rem;
+}
+
+b.headerMonth {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+    color: #27364B;
 }
 
 .button {
