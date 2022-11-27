@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 
-.App{
+.App {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     height: 100vh;
 }
 
-h1 {font-weight:normal;}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+}
+
+button {
+    border: unset;
+}
+
+h1 {
+    font-weight: normal;
+}

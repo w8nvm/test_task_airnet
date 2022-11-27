@@ -24,12 +24,15 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     height: var(--cell-height);
-    /* width: var(--cell-width); */
+    width: var(--cell-width);
     min-height: 100%;
 }
 
 .rowInCell {
     position: relative;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 .cellWrapper.beforeToday {
@@ -44,6 +47,18 @@
     height: 32px;
     justify-content: center;
     align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: minmax(12px, 2rem);
+    line-height: 25px;
+    color: #BD93E1;
+}
+
+.dayWrapper.today {
+    width: 25px;
+    height: 25px;
+    background-color: #F8F8F8;
+    border-radius: 10px 0px 10px 0px;
 }
 
 .weekday {
@@ -69,6 +84,7 @@
 
 .cellWrapper.today {
     background: #BD93E1;
+    box-shadow: 0px 0px 15px #BD93E1;
 }
 
 
@@ -108,4 +124,42 @@
     font-size: 40px;
     line-height: 49px;
     color: #27364B;
+}
+
+.taskAddingButton {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 60px;
+    width: 100%;
+    max-height: 32px;
+    color: #64748B;
+    margin: 5px 0 0 5px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+}
+
+/* .taskAddingButton:hover {
+
+} */
+
+.addButtonText {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.taskAddingButton::before {
+    content: '+';
+    font-size: 2em;
+    color: #BD93E1;
+    transition-duration: 0.5s;
+}
+
+.taskAddingButton:hover:before {
+    transform: rotate(90deg);
 }
